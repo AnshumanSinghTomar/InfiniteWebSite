@@ -15,7 +15,7 @@ function rInt(rng, min, max) {
   return Math.floor(rng() * (max - min + 1)) + min;
 }
 
-// --- Data -------------------------------------------------------------------
+// --- Data -----------------------
 const FACTS = [
   "Honey never spoils.",
   "Wombats produce cube-shaped poop.",
@@ -282,3 +282,4 @@ document.getElementById("seedInput").oninput = e => {
   main.innerHTML = ""; // reset
   addBatch();
 };
+
