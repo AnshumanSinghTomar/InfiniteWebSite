@@ -1,4 +1,4 @@
-// --- Seeded RNG ------------------------------------------
+// --- Seeded RNG -------------------------------------
 function seededRNG(seed) {
   let x = seed ? seed >>> 0 : Math.floor(Math.random() * 0xffffffff);
   return () => {
@@ -282,6 +282,7 @@ document.getElementById("seedInput").oninput = e => {
   main.innerHTML = ""; // reset
   addBatch();
 };
+
 
 
 
